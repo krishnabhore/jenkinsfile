@@ -15,11 +15,17 @@ pipeline {
                     load(".env")
 
                     // Run Helm Upgrade
+                if("krishna"="krishna"){
                     sh """
-                        echo "HWLLOW"
-                        echo ${MY_NAME}
-
+                    date 
+                    pwd
                     """
+                    
+                }
+                else{
+                    echo "failed hai bhai"
+                }    
+                    
                 }
             }
         }
