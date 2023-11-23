@@ -15,7 +15,7 @@ pipeline {
                     load(".env")
 
                     // Run Helm Upgrade
-                if("krishna"="krishna"){
+                if("krishna"=="krishna"){
                     sh """
                     date 
                     pwd
