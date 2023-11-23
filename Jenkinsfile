@@ -27,7 +27,7 @@ pipeline {
                 }    
                 if("yes" == "yes"){
                     sh """
-                    echo "sahi hai"
+                    echo "sahi haoo hai"
                     """
                     
                 }                    
