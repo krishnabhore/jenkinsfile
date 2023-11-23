@@ -15,7 +15,7 @@ pipeline {
                     load(".env")
 
                     // Run Helm Upgrade
-                if(${BUILD_BOOKS_IMAGE} == "yes"){
+                if( "${BUILD_BOOKS_IMAGE}" == "yes"){
                     sh """
                     date 
                     pwd
