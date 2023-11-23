@@ -19,7 +19,6 @@ pipeline {
                     sh """
                     date 
                     pwd
-                    ll
                     """
                     
                 }
