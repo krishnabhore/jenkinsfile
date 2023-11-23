@@ -17,7 +17,7 @@ pipeline {
                     // Run Helm Upgrade
                     sh """
                         echo "HWLLOW"
-                        echo \${MY_NAME}
+                        echo ${MY_NAME}
 
                     """
                 }
