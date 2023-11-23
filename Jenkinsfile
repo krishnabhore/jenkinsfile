@@ -4,7 +4,7 @@ pipeline {
     environment {
         HELM_CHART_NAME = 'bookapp'
         HELM_NAMESPACE = 'bookapp'
-        ENV_FILE_PATH = '.env'
+        ENV_FILE_PATH = '.envhelm'
     }
 
     stages {
@@ -12,7 +12,7 @@ pipeline {
             steps {
                 script {
                     // Load environment variables from the .env file
-                    load(".env")
+                    load(".envhelm")
 
                     // Run Helm Upgrade
                 if( "${BUILD_BOOKS_IMAGE}" == "yes"){
