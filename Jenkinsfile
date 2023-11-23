@@ -15,17 +15,23 @@ pipeline {
                     load(".env")
 
                     // Run Helm Upgrade
-                if("krishna"=="krishna"){
+                if(${BUILD_BOOKS_IMAGE} == "yes"){
                     sh """
                     date 
                     pwd
+                    ll
                     """
                     
                 }
                 else{
                     echo "failed hai bhai"
                 }    
+                if("yes" == "yes"){
+                    sh """
+                    echo "sahi hai"
+                    """
                     
+                }                    
                 }
             }
         }
